@@ -3,21 +3,29 @@ require('styles/App.css');
 
 import React from 'react';
 
-let yeomanImage = require('../images/yeoman.png');
+import PhotoComponent from './Photo';
+
+
+//从数据库中获取图片的信息
+var imageData = require('json!../db/data.json');
+//当前索引
+var indexNow = 0;
 
 class AppComponent extends React.Component {
+
   render() {
-    return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <span>HHHH</span>
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
+
+    return(
+      <div className="content">
+        <PhotoComponent data={imageData[indexNow]}/>
       </div>
     );
+
   }
 }
 
 AppComponent.defaultProps = {
+
 };
 
 export default AppComponent;
