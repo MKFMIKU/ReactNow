@@ -1,0 +1,44 @@
+.upload{
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+section{
+  width: 108px;
+  height: 108px;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+section img{
+  width: 64px;
+  height: 64px;
+}
+
+.uploadBoard{
+  width: 54%;
+  height: 108px;
+  margin: 0 auto;
+}
+.uploadBoard div{
+  background-color: #f0f0f0;
+  height: 100%;
+  width: 108px;
+  border-radius: 4px;
+  color: #000000;
+}
+
+.uploadBoard span{
+  line-height: 108px;
+}
+
+.wild{
+  float: left;
+}
+
+.make{
+  float: right;
+}
