@@ -17,6 +17,8 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
+  background-position: 60% 50%;
 }
 
 .page-wrapper{
@@ -25,3 +27,53 @@ body {
   margin: 0 auto;
 }
 
+.About{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.About p{
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+footer::before{
+  content: "";
+  height: 4px;
+  width: 80px;
+  background: #d5d9dc;
+  display: block;
+  text-align: center;
+  margin: 0 auto 2em;
+}
+
+footer section{
+  display: inline-block;
+  margin: 2rem;
+}
+
+footer a{
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #333;
+}
+
+footer a p{
+  display: inline-block;
+  vertical-align: baseline;
+}
+footer img{
+  margin-right: 1rem;
+  vertical-align: baseline;
+  height: 2.4rem;
+}
+
+footer section h2{
+  font-size: 2.4rem;
+  color: #333;
+}

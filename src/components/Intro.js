@@ -1,8 +1,13 @@
 require('!style!css!sass!../styles/Intro.scss');
 
 import React from 'react';
+import UploadComponent from './Upload';
 
 class IntroComponent extends React.Component {
+
+  upload() {
+
+  }
 
   render() {
 
@@ -18,14 +23,17 @@ class IntroComponent extends React.Component {
 
           <p className="icon">
             <a href="#" className="iconfont">&#xe614;</a>
-            <a href="#" className="iconfont">&#xe6a2;</a>
-            <a href="#" className="iconfont">&#xe60a;</a>
-            <a href="#" className="iconfont">&#xe662;</a>
+            <a href="#" className="iconfont" onClick={this.upload}>&#xe6a2;</a>
+            <a href="#about" className="iconfont">&#xe60a;</a>
+            <a href="https://github.com/MKFMIKU/ReactNow" className="iconfont">&#xe662;</a>
           </p>
         </div>
         <div className="side">
 
         </div>
+
+        <UploadComponent/>
+
       </div>
     );
 

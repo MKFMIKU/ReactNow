@@ -3,11 +3,23 @@ require('styles/Photo.css');
 
 import React from 'react';
 
+class ControllComponent extends React.Component {
+  render(){
+    return(
+      <div className="controll">
+        <input type="text" />
+
+      </div>
+    );
+  }
+}
+
 
 class PhotoComponent extends React.Component {
   render() {
     return (
       <div className="photo">
+
         <figure>
           <figcaption>
             <h2>Wild</h2>
@@ -23,6 +35,8 @@ class PhotoComponent extends React.Component {
           </figcaption>
           <img src={this.props.data.make} />
         </figure>
+
+        <ControllComponent/>
       </div>
     );
   }
