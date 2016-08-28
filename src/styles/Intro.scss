@@ -1,0 +1,71 @@
+.intro{
+  -webkit-animation-name: FADEY;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+}
+
+header[role="banner"]{
+  padding-top: 16%;
+  padding-left: 25%;
+
+  h1{
+    font-size: 4.8rem;
+    line-height: 0.8;
+    color: #182e4f;
+    letter-spacing: 0;
+    font-weight: 900;
+    position: relative;
+
+    &::after{
+      content: "MADE CLF";
+      font-size: 1.4rem;
+      letter-spacing: 0.5rem;
+      position: absolute;
+      top: -50%;
+      right: 40%;
+      color: rgba(24, 46, 79, 0.4);
+    }
+  }
+
+  h2{
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0;
+    position: absolute;
+    left: 75%;
+    color: rgba(41, 78, 134, 0.5);
+    top: 10rem;
+  }
+}
+
+.summary{
+  -webkit-opacity: 0;
+  -webkit-animation-name: FADEY;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  padding: 10% 25%;
+  text-align: right;
+  position: relative;
+
+  p{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+}
+
+
+
+/*-------------------------------------------
+	Animations
+-------------------------------------------*/
+
+@-webkit-keyframes FADEY {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
