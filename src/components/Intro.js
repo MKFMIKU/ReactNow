@@ -15,6 +15,16 @@ class IntroComponent extends React.Component {
         <div className="summary" role="article">
           <p>A database store the human photo in wild and make <br/>
           Aim at find a way to deoxidization girl's photo</p>
+
+          <p className="icon">
+            <a href="#" className="iconfont">&#xe614;</a>
+            <a href="#" className="iconfont">&#xe6a2;</a>
+            <a href="#" className="iconfont">&#xe60a;</a>
+            <a href="#" className="iconfont">&#xe662;</a>
+          </p>
+        </div>
+        <div className="side">
+
         </div>
       </div>
     );

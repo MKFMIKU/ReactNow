@@ -13,6 +13,9 @@ class AppComponent extends React.Component {
     return(
       <div className="page-wrapper">
         <IntroComponents/>
+        <div className="main">
+          
+        </div>
       </div>
     );
 
